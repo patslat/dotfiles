@@ -1,0 +1,30 @@
+let &t_Co=256
+color molokai
+inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap <Up> You Idiot
+inoremap <Down> You Idiot
+inoremap <Left> You Idiot
+inoremap <Right> You Idiot
+inoremap ¬  => 
+set nohlsearch
+inoremap <c-l> => 
+
+au FileType ruby set expandtab
+au FileType ruby set shiftwidth=2
+au FileType ruby set tabstop=2
+au FileType javascript set expandtab
+au FileType javascript set shiftwidth=2
+au FileType javascript set tabstop=2
+
+au BufNewFile,BufRead *.md set filetype=ruby
+au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.hamlc set filetype=haml
+
+set expandtab
+set shiftwidth=2
+set tabstop=2
+
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
