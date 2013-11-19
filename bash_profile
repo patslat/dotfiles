@@ -28,3 +28,12 @@ alias tmux="tmux -2"
 alias tma="tmux attach -d -t"
 alias gmux="tmux new -s $(basename $(pwd))"
 
+#zookeeper
+alias zoo="~/zookeeper-3.3.6/bin/zkServer.sh"
+
+export CC=gcc-4.2
+export CXX=g++-4.2
+export CPP=cpp-4.2
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
