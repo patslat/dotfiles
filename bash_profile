@@ -1,6 +1,8 @@
 PROMPT_COLOR='\e[00m\e[31;05;166m'
 export PS1='\['$PROMPT_COLOR'\]\w\$\[\e[0m\] '
 
+alias sudo='sudo '
+
 # git commands
 alias ginit="git init"
 alias ggrep="git grep"
