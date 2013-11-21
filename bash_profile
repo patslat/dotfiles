@@ -3,6 +3,9 @@ export PS1='\['$PROMPT_COLOR'\]\w\$\[\e[0m\] '
 
 alias sudo='sudo '
 
+# sbt
+alias sbt='JAVA_OPTS="-Xmx1280M -Xms512M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=512M" sbt-0.11'
+
 # git commands
 alias ginit="git init"
 alias ggrep="git grep"
