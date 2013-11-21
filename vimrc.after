@@ -17,7 +17,7 @@ au FileType javascript set expandtab
 au FileType javascript set shiftwidth=2
 au FileType javascript set tabstop=2
 
-au BufNewFile,BufRead *.md set filetype=ruby
+au BufNewFile,BufRead *.md set filetype=text
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.hamlc set filetype=haml
 
