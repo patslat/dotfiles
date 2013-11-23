@@ -1,10 +1,15 @@
 PROMPT_COLOR='\e[00m\e[31;05;166m'
 export PS1='\['$PROMPT_COLOR'\]\w\$\[\e[0m\] '
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
 
 alias sudo='sudo '
 
 # sbt
 alias sbt='JAVA_OPTS="-Xmx1280M -Xms512M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=512M" sbt-0.11'
+
+# nodetool
+PATH=$HOME/apache-cassandra-1.0.12/bin:$PATH/
 
 # git commands
 alias ginit="git init"
@@ -28,6 +33,8 @@ alias gpull="git pull"
 
 # tmux commands
 alias tls="tmux ls"
+alias tnew="TMUX= tmux new -d -s "
+alias tsw="tmux switch -t "
 alias tkill="tmux kill-session"
 alias tmux="tmux -2"
 alias tma="tmux attach -d -t"
@@ -35,10 +42,16 @@ alias gmux="tmux new -s $(basename $(pwd))"
 
 #zookeeper
 alias zoo="~/zookeeper-3.3.6/bin/zkServer.sh"
+#export cc="/usr/local/Cellar/gcc46"
+#export CC=gcc-4.2
+#export CXX=g++-4.2
+#export CPP=cpp-4.2
 
-export CC=gcc-4.2
-export CXX=g++-4.2
-export CPP=cpp-4.2
+#cassandra
+alias cass="~/apache-cassandra-1.0.12/bin/cassandra -f"
+alias casscli="~/apache-cassandra-1.0.12/bin/cassandra-cli -h localhost -p 9160"
+
+
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
