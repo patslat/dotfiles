@@ -5,6 +5,9 @@ export PATH="$JAVA_HOME/bin:$PATH"
 
 alias sudo='sudo '
 
+#rails
+alias be="bundle exec "
+
 # sbt
 alias sbt='JAVA_OPTS="-Xmx1280M -Xms512M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=512M" sbt-0.11'
 
