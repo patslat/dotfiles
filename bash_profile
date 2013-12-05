@@ -46,6 +46,7 @@ alias gmux="tmux new -s $(basename $(pwd))"
 
 #zookeeper
 alias zoo="~/zookeeper-3.3.6/bin/zkServer.sh"
+alias logz="tail -f log/development.log"
 #export cc="/usr/local/Cellar/gcc46"
 #export CC=gcc-4.2
 #export CXX=g++-4.2
