@@ -14,6 +14,20 @@ alias sbt='JAVA_OPTS="-Xmx1280M -Xms512M -Xss1M -XX:+CMSClassUnloadingEnabled -X
 # nodetool
 PATH=$HOME/apache-cassandra-1.0.12/bin:$PATH/
 
+# task switch, check out or create new branch and attach or create matching tmux session
+taskSwitch() {
+  git checkout $1 || git checkout -b $1;
+  tmux switch -t $1 || TMUX= tmux new -d -s $1 && tmux switch -t $1;
+}
+taskKill() {
+  git checkout master
+  git branch -d $1
+  tmux kill-session -t $1
+}
+
+alias task=taskSwitch
+alias taskKill=taskKill
+
 # git commands
 alias ginit="git init"
 alias ggrep="git grep"
