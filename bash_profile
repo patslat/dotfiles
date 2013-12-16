@@ -16,6 +16,7 @@ PATH=$HOME/apache-cassandra-1.0.12/bin:$PATH/
 
 # task switch, check out or create new branch and attach or create matching tmux session
 taskSwitch() {
+  git checkout master
   git checkout $1 || git checkout -b $1;
   tmux switch -t $1 || TMUX= tmux new -d -s $1 && tmux switch -t $1;
 }
