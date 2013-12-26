@@ -31,6 +31,7 @@ alias taskKill=taskKill
 
 # git commands
 alias ginit="git init"
+alias gblame="git blame"
 alias ggrep="git grep"
 alias gco="git checkout"
 alias gcbr="git checkout -b"
