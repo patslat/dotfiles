@@ -77,7 +77,8 @@ alias logz="tail -f log/development.log"
 alias cass="~/apache-cassandra-1.0.12/bin/cassandra -f"
 alias casscli="~/apache-cassandra-1.0.12/bin/cassandra-cli -h localhost -p 9160"
 
-
+#pagerduty ssh
+complete -W "`grep 'pd-internal.com' ~/.ssh/known_hosts | awk -F '.' '{print $1}' | sort -u | sed 's/$/.pd/'`" ssh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

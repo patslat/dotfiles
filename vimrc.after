@@ -1,5 +1,6 @@
 let &t_Co=256
 color molokai
+
 inoremap jk <Esc>
 inoremap kj <Esc>
 inoremap <Up> You Idiot
@@ -7,7 +8,6 @@ inoremap <Down> You Idiot
 inoremap <Left> You Idiot
 inoremap <Right> You Idiot
 inoremap ¬  => 
-set nohlsearch
 inoremap <c-l> => 
 
 au FileType ruby set expandtab
@@ -21,6 +21,7 @@ au BufNewFile,BufRead *.md set filetype=text
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.hamlc set filetype=haml
 
+set nohlsearch
 set expandtab
 set shiftwidth=2
 set tabstop=2
@@ -28,3 +29,17 @@ set tabstop=2
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+
+func! WordProcessorMode()
+  setlocal formatoptions=1
+  setlocal noexpandtab
+  map j gj
+  map k gk
+  setlocal spell spelllang=en_us
+  set thesaurus+=/Users/sbrown/.vim/thesaurus/mthesaur.txt
+  set complete+=s
+  set formatprg=par
+  setlocal wrap
+  setlocal linebreak
+endfu
+com! WP call WordProcessorMode()
