@@ -1,6 +1,8 @@
 let &t_Co=256
 color molokai
 
+noremap <leader>. :CtrlPTag<CR>
+
 inoremap jk <Esc>
 inoremap kj <Esc>
 inoremap <Up> You Idiot
