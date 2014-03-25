@@ -45,3 +45,7 @@ func! WordProcessorMode()
   setlocal linebreak
 endfu
 com! WP call WordProcessorMode()
+
+au BufRead,BufNewFile *.thrift set filetype=thrift
+au! Syntax thrift source ~/.vim/thrift.vim
+
