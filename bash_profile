@@ -50,6 +50,7 @@ alias gmg="git merge"
 alias grm="git rm"
 alias gra="git remote add"
 alias gpull="git pull"
+alias gclone="git clone"
 
 # tmux commands
 alias tls="tmux ls"
