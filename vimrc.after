@@ -5,10 +5,10 @@ noremap <leader>. :CtrlPTag<CR>
 
 inoremap jk <Esc>
 inoremap kj <Esc>
-inoremap <Up> You Idiot
-inoremap <Down> You Idiot
-inoremap <Left> You Idiot
-inoremap <Right> You Idiot
+"inoremap <Up> You Idiot
+"inoremap <Down> You Idiot
+"inoremap <Left> You Idiot
+"inoremap <Right> You Idiot
 inoremap ¬  => 
 inoremap <c-l> => 
 
