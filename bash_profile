@@ -8,6 +8,7 @@ alias sudo='sudo '
 
 #rails
 alias be="bundle exec "
+alias routes="bundle exec rake routes | grep "
 
 # nodetool
 PATH=$HOME/apache-cassandra-1.0.12/bin:$PATH/
