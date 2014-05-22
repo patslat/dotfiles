@@ -1,8 +1,10 @@
 PROMPT_COLOR='\e[00m\e[31;05;166m'
-export PS1='\['$PROMPT_COLOR'\]\w\$\[\e[0m\] '
+export PS1='\['$PROMPT_COLOR'\]\w  ϕ\[\e[0m\] '
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
+
+alias e='emacs'
 
 alias sudo='sudo '
 
