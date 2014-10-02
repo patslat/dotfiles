@@ -1,6 +1,9 @@
 let &t_Co=256
 color molokai
 
+"Go to line with enter
+noremap <CR> G
+
 noremap <leader>. :CtrlPTag<CR>
 
 inoremap jk <Esc>
