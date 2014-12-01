@@ -57,6 +57,20 @@ alias gpull="git pull"
 alias gclone="git clone"
 alias gcp="git cherry-pick"
 
+chist() {
+  fileNames=$(gdiff | grep -e --- | sed 's/--- a\/'//)
+  for fileName in $fileNames
+  do
+    changedLines=$(gdiff --unified=0 $fileName | grep @@ | sed 's/@@ //' | sed 's/ @@.*//' | sed 's/-//' | sed 's/,.*//' | sed 's/ .*//')
+    echo Changed file: $fileName
+    for changedLine in $changedLines
+    do
+      echo Diff start: $changedLine
+      git blame HEAD $fileName -L $changedLine,$changedLine
+    done
+  done
+}
+
 # tmux commands
 alias tls="tmux ls"
 alias tnew="TMUX= tmux new -d -s "
