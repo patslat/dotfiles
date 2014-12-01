@@ -32,6 +32,7 @@ alias task=taskSwitch
 alias taskKill=taskKill
 
 # git commands
+alias g="git "
 alias ginit="git init"
 alias gblame="git blame"
 alias ggrep="git grep"
