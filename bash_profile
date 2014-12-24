@@ -8,6 +8,9 @@ alias e='emacs'
 
 alias sudo='sudo '
 
+# Chef
+alias bxk="bundle exec knife "
+
 #rails
 alias be="bundle exec "
 alias routes="bundle exec rake routes | grep "
