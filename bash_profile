@@ -5,6 +5,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 alias e='emacs'
+alias vi='/usr/local/bin/vim'
 
 alias sudo='sudo '
 
