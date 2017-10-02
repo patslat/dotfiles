@@ -1,6 +1,9 @@
 PROMPT_COLOR='\e[00m\e[31;05;166m'
 export PS1='\['$PROMPT_COLOR'\]\w  ϕ\[\e[0m\] '
 
+# Homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
 alias e='emacs'
 
 alias sudo='sudo '
