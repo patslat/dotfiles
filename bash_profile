@@ -1,11 +1,7 @@
 PROMPT_COLOR='\e[00m\e[31;05;166m'
 export PS1='\['$PROMPT_COLOR'\]\w  ϕ\[\e[0m\] '
-export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
-export PATH="/usr/local/bin:$PATH"
-export PATH="$JAVA_HOME/bin:$PATH"
 
 alias e='emacs'
-alias vi='/usr/local/bin/vim'
 
 alias sudo='sudo '
 
@@ -16,9 +12,6 @@ alias bxk="bundle exec knife "
 alias be="bundle exec "
 alias routes="bundle exec rake routes | grep "
 alias trbl="bundle exec testrbl -I test "
-
-# nodetool
-PATH=$HOME/apache-cassandra-1.0.12/bin:$PATH/
 
 # task switch, check out or create new branch and attach or create matching tmux session
 taskSwitch() {
@@ -84,24 +77,3 @@ alias tkill="tmux kill-session"
 alias tmux="tmux -2"
 alias tma="tmux attach -d -t"
 alias gmux="tmux new -s $(basename $(pwd))"
-
-#pow
-alias debug="bundle exec rdebug -c"
-
-#zookeeper
-alias zoo="~/zookeeper-3.3.6/bin/zkServer.sh"
-alias logz="tail -f log/development.log"
-#export cc="/usr/local/Cellar/gcc46"
-#export CC=gcc-4.2
-#export CXX=g++-4.2
-#export CPP=cpp-4.2
-
-#cassandra
-alias cass="~/apache-cassandra-1.0.12/bin/cassandra -f"
-alias casscli="~/apache-cassandra-1.0.12/bin/cassandra-cli -h localhost -p 9160"
-
-#pagerduty ssh
-complete -W "`grep 'pd-internal.com' ~/.ssh/known_hosts | awk -F '.' '{print $1}' | sort -u | sed 's/$/.pd/'`" ssh
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
