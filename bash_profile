@@ -77,3 +77,6 @@ alias tkill="tmux kill-session"
 alias tmux="tmux -2"
 alias tma="tmux attach -d -t"
 alias gmux="tmux new -s $(basename $(pwd))"
+
+# added by Anaconda2 5.0.0 installer
+export PATH="/Users/ps/anaconda2/bin:$PATH"
