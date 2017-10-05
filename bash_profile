@@ -83,3 +83,7 @@ alias gmux="tmux new -s $(basename $(pwd))"
 
 # added by Anaconda2 5.0.0 installer
 export PATH="/Users/ps/anaconda2/bin:$PATH"
+
+groundControlToMajorTom() {
+  curl 'http://api.open-notify.org/iss-now.json' | jq .
+}
